@@ -10,13 +10,13 @@ function checkElement(theText, theTag)
 
 test('renders header text', () => {
 
-  var data = { "name": "hammer",      "pic": "hammer_medium.jpg",      "size": "medium", "department": "tools", "price": 12.50};
+  var data = { "name": "hammer",      "pic": "hammer_medium.jpg",      "size": "medium", "department": "tools", "price": "£12.50"};
 
   render(<DataItem product={data}/>);
   checkElement("Name: hammer", "P");
   checkElement("Size: medium", "P");
   checkElement("Department: tools", "P");
-  checkElement("Proce: 12.5", "P"); 
+  checkElement("Price: £12.50", "P"); 
   
 
 });

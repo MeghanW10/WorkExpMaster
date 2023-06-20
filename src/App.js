@@ -10,8 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">      
         <h1><img src={logo} className="App-logo" alt="logo"/>Junior</h1>        
-        <DataTable /> 
-        
+        <DataTable />  
       </header>
     </div>
   );
