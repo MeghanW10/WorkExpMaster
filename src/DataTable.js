@@ -15,7 +15,7 @@ function DataTable() {
   }
   function previousPage()
   {
-    if (itemNo - 1 > 0)
+    if (itemNo - 1 >= 0)
     {
       setItemNo(itemNo-1);
     }
