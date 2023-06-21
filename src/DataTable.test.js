@@ -30,15 +30,15 @@ test('renders item zero from data', () => {
     button.click();
 
     const button1 = screen.getByText("Previous");
-    expect(button).toBeInTheDocument();
+    expect(button1).toBeInTheDocument();
     button.click();
 
     const button2 = screen.getByText("First Item");
-    expect(button).toBeInTheDocument();
+    expect(button2).toBeInTheDocument();
     button.click();
 
     const button3 = screen.getByText("Last Item");
-    expect(button).toBeInTheDocument();
+    expect(button3).toBeInTheDocument();
     button.click();
 
     await waitFor(() => {
