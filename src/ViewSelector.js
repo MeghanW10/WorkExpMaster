@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 
 function ViewSelector({options, setOptions}) 
 {
 
-return (<div>            
-          <select
-            value={options} // ...force the select's value to match the state variable...
-            onChange={(e) => setOptions(e.target.value,)}> // ... and update the state variable on any change!
-             <option value="Gallery">Gallery</option>
-              <option value="List">List</option>
+return (           
+          <select            
+            value={options} 
+            onChange={(e) => setOptions(e.target.value)}>
               <option value="Single">Single</option>
+              <option value="Gallery">Gallery</option>
+              <option value="List">List</option>
+              
             </select>
-            </div>)
-   
-}           
-                          
-  export default ViewSelector;
+            )
+} 
+
+export default ViewSelector;
